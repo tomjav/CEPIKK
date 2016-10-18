@@ -1,13 +1,14 @@
 package pl.tgrzybowski.Entities;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import com.sun.istack.internal.NotNull;
+import lombok.*;
 import pl.tgrzybowski.Enumes.Role;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
-@Entity
+@Entity(name = "client")
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
@@ -22,4 +23,10 @@ public class User {
     @Enumerated(EnumType.STRING)
     @Column(name="Rola")
     private Role role;
+
+    //(jeden uzytkownik moze miec wiele postaci)
+    @OneToMany
+    @JoinColumn(name = "ownerId")
+    private List<Character> phones = new ArrayList<>();
+
 }

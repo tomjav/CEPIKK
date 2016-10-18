@@ -1,4 +1,4 @@
-package pl.tgrzybowski.Enumes.Repositories;
+package pl.tgrzybowski.Repositories;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import pl.tgrzybowski.Entities.User;

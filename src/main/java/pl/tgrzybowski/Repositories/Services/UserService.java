@@ -1,9 +1,9 @@
-package pl.tgrzybowski.Enumes.Repositories.Services;
+package pl.tgrzybowski.Repositories.Services;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import pl.tgrzybowski.Entities.User;
-import pl.tgrzybowski.Enumes.Repositories.UserRepository;
+import pl.tgrzybowski.Repositories.UserRepository;
 
 import java.util.List;
 
